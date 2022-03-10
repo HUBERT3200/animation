@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(1,4,6);
+    margin: 0;
+    pading: 0;
+}
+img {
+    width: 100%;
+}
+
+.containerr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+.container {
+    top: 50%;
+    left: 50%;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.animacja::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s
+}
+
+.animacja:hover::after {
+    width: 100%;
+    transition: width .3s
+}
